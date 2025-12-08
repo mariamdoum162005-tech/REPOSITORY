@@ -1,0 +1,234 @@
+/* ========================= BASE ========================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f2ef; 
+    color: #3a2f2f; 
+    line-height: 1.6;
+    margin: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* ========================= LIENS =========================*/ 
+a {
+    color: #b35e49; 
+    text-decoration: none;
+    position: relative;
+    transition: color 0.4s, transform 0.3s, text-shadow 0.4s;
+}
+
+a:hover {
+    color: #e09f80;
+    transform: scale(1.08);
+    transform: translateY(-2px)
+    text-shadow 0 2px 8px rgba(224,159,128,0.6);
+}
+    a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #e09f80;
+    left: 0;
+    bottom: -3px;
+    transition: width 0.4s;
+}
+    a:hover::after {
+    width: 100%;
+}
+    
+
+/* ========================= HEADER ========================= */
+#header {
+    background-color: #a86a5d;
+    padding: 20px 0;
+    color: #fff;
+    transition: background-color 0.5s, padding 0.3s, box-shadow 0.4s;
+}
+
+#header:hover {
+    background-color: #b35e49;
+    padding: 25px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+#header .profile img {
+    border: 3px solid #f8f2ef;
+    transition: transform 0.5s, border-color 0.4s, box-shadow 0.4s;
+}
+
+#header .profile img:hover {
+    transform: scale(1.1) rotate(-3deg);
+    border-color: #e09f80;
+    box-shadow: 0 8px 20px rgba(224,159,128,0.4);
+}
+
+/* ========================= HERO ========================= */
+#hero {
+    background: linear-gradient(rgba(168,106,93,0.85), rgba(168,106,93,0.85)), url('image/hero-bg.jpg') center center no-repeat;
+    background-size: cover;
+    color: #fdf6f0;
+    text-align: center;
+    padding: 150px 0;
+    transition: background 0.5s, color 0.5s;
+}
+
+#hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    transition: transform 0.5s, color 0.4s, text-shadow 0.4s;
+}
+
+#hero h1:hover {
+    transform: scale(1.08) rotate(-1deg);
+    color: #e09f80;
+    text-shadow: 0 4px 20px rgba(224,159,128,0.6);
+}
+
+#hero p {
+    font-size: 22px;
+    color: #f1d3c4;
+    transition: color 0.4s, transform 0.4s, text-shadow 0.4s;
+}
+
+#hero p:hover {
+    transform: translateY(-8px);
+    color: #b35e49;
+    text-shadow: 0 2px 12px rgba(179,94,73,0.4);
+}
+
+/* ========================= TITRES DE SECTIONS ========================= */
+.section-title h2 {
+    color: #3a2f2f;
+    font-size: 36px;
+    border-bottom: 2px solid #b35e49;
+    display: inline-block;
+    padding-bottom: 5px;
+    transition: color 0.4s, border-color 0.4s, transform 0.3s, text-shadow 0.4s;
+}
+
+.section-title h2:hover {
+    color: #b35e49;
+    transform: scale(1.1);
+    border-color: #e09f80;
+    text-shadow: 0 4px 15px rgba(224,159,128,0.5);
+}
+
+.section-title p {
+    color: #5c4b47;
+    transition: color 0.4s, transform 0.4s;
+}
+
+.section-title p:hover {
+    transform: translateX(5px);
+    color: #a86a5d;
+} 
+
+/* ========================= SKILLS ========================= */
+.skills .progress-bar {
+    background-color: #b35e49; 
+    transition: width 0.6s ease-in-out, background-color 0.4s, box-shadow 0.3s;
+}
+
+.skills .progress-bar:hover {
+    box-shadow: 0 4px 15px rgba(179,94,73,0.6);
+}
+
+.skills .skill i.val {
+    color: #3a2f2f;
+    transition: color 0.4s, transform 0.3s;
+}
+
+.skills .skill i.val:hover {
+    transform: scale(1.2);
+    color: #e09f80;
+}
+
+/* ========================= PORTFOLIO ========================= */
+.portfolio .portfolio-wrap {
+    border: 2px solid #e0c9bc;
+    transition: transform 0.5s, box-shadow 0.5s, border-color 0.4s, background-color 0.4s;
+    background-color: #fdf6f0;
+}
+
+.portfolio .portfolio-wrap:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    border-color: #b35e49;
+    background-color: #f7e9e2;
+}
+
+/* ========================= SERVICES ========================= */
+.icon-box {
+    background-color: #fdf6f0;
+    border: 1px solid #e0c9bc;
+    transition: all 0.5s ease-in-out;
+}
+
+.icon-box:hover {
+    background-color: #f4e4de;
+    transform: translateY(-8px) scale(1.05) rotate(-1deg);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ========================= CONTACT ========================= */
+.contact .info h4 {
+    color: #b35e49;
+    transition: color 0.4s, transform 0.3s;
+}
+
+.contact .info h4:hover {
+    transform: scale(1.1);
+    color: #e09f80;
+}
+
+.contact .php-email-form button {
+    background-color: #b35e49;
+    border: none;
+    padding: 10px 30px;
+    color: #fdf6f0;
+    transition: background 0.4s, transform 0.3s, box-shadow 0.3s;
+}
+
+.contact .php-email-form button:hover {
+    background-color: #e09f80;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(224,159,128,0.6);
+}
+
+/* ========================= FOOTER ========================= */
+#footer {
+    background-color: #a86a5d;
+    color: #fdf6f0;
+    padding: 20px 0;
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.4s;
+}
+
+#footer:hover {
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+}
+
+#footer a {
+    color: #fdf6f0;
+    transition: color 0.4s, text-shadow 0.4s;
+}
+
+#footer a:hover {
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(255,255,255,0.6);
+}
+
+/* ========================= PETITS DÉTAILS ========================= */
+.back-to-top {
+    background-color: #b35e49;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.4s, transform 0.3s, box-shadow 0.4s;
+}
+
+.back-to-top:hover {
+    background-color: #e09f80;
+    transform: scale(1.15);
+    box-shadow: 0 6px 20px rgba(224,159,128,0.6);
+}
